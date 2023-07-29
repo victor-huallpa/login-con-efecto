@@ -144,8 +144,8 @@ body{
 }
 .box form .input input:valid~i,
 .box form .input input:focus~i{
-height: 44px;
-transform: translateY(-39px);
+    height: 34px;
+    transform: translateY(-44px);
 
 }
 .box form .links{
