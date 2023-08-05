@@ -134,6 +134,7 @@ body{
 .box form .input i{
     position: absolute;
     left: 0;
+    bottom: 0;
     width: 100%;
     height: 2px;
     background: #f7f7f7;
@@ -145,7 +146,6 @@ body{
 .box form .input input:valid~i,
 .box form .input input:focus~i{
     height: 34px;
-    transform: translateY(-44px);
 
 }
 .box form .links{
