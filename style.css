@@ -115,8 +115,9 @@ body{
     letter-spacing: 0.05em;
     transition: 0.5s;
     z-index: 10;
+    height: 40px;
 }
-.box form .input span{
+.box form .input label{
     position: absolute;
     left: 0;
     padding: 20px 0px 10px;
@@ -125,13 +126,13 @@ body{
     font-size: 1em;
     transition: 0.5s;
 }
-.box form .input input:valid~span,
-.box form .input input:focus~span{
+.box form .input input:valid~label,
+.box form .input input:focus~label{
     color: #fff;
     font-size: 1em;
     transform: translateY(-35px);
 }
-.box form .input i{
+.box form .input .line{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -143,8 +144,8 @@ body{
     transition: 0.5s;
     pointer-events: none;
 }
-.box form .input input:valid~i,
-.box form .input input:focus~i{
+.box form .input input:valid~.line,
+.box form .input input:focus~.line{
     height: 34px;
 
 }
@@ -204,6 +205,20 @@ form input[type='submit']{
 form input[type='submit']:hover{
     display: flex;
     padding: 2px ;
+}
+.input .icon{
+    position: absolute;
+    top: 60px;
+    transform: translateY(-43px) translateX(-4px);
+    color: #fe0808;
+    right: 0;/*se agrego esto*/
+    z-index: 10;
+    cursor: pointer;
+    width: 20px;
+    /* height: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @keyframes animate{
     100%{
